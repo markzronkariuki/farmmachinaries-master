@@ -54,7 +54,7 @@ const Signupcomponent=()=>
   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
   alt="banner"
   className="rounded mb-3 d-block mx-auto"
-  style={{ width: "600px", height: "100px", objectFit: "cover" }}
+  style={{ width: "550px", height: "100px", objectFit: "cover" }}
 />
         <h3 style={{ color: "#6a11cb" }}>SIGNUP 🧑‍💻</h3>
                 <marquee behavior="scroll" direction="left" scrollamount="5 ">

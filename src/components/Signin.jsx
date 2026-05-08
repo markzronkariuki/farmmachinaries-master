@@ -56,7 +56,7 @@ const hundlesubmit=async(e)=>{
     <img
       src="https://cdn-icons-png.flaticon.com/512/295/295128.png"
       alt="signin"
-      style={{ width: "100px", height: "100px", objectFit: "contain" }}
+      style={{ width: "100px", height: "100px", objectFit: "cover" }}
     />
   </div>
                 <h3 style={{ color: "#6a11cb" }}>SIGNIN 🔑💻</h3>
