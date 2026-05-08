@@ -13,6 +13,8 @@ const Addproduct = () => {
     const[success,setSuccess]=useState("")
     const[error,setError]=useState("")
     
+    
+    
     // funtion to hundle submit /\\
 
     const handlesubmit=async(e)=>{
@@ -30,6 +32,8 @@ const Addproduct = () => {
             setLoading("")
             
         } catch (error) {
+          setError("Failed to add products");
+    console.log(error);
             
         }
     }
@@ -51,11 +55,12 @@ return (
   />
 </div>
                  <h3 style={{ color: "#6a11cb" }}>Add products 🛒</h3>
-               <marquee behavior="scroll" direction="left" scrollamount="5">
+               
+               
   <h3 style={{ color: "#6a11cb" }}>
     🛒 Add your products easily and manage your store 🚀
     </h3>
-    </marquee>
+    
                 {/* bind the state  */}
                 <h2 className="text-warning">{loading}</h2>
                 <h2 className="text-success">{success}</h2>

@@ -1,5 +1,5 @@
 import axios from 'axios'
-import react, { useState,useEffect  } from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { useNavigate } from 'react-router-dom'
 import Carousel from './Carousel'
@@ -48,6 +48,8 @@ const Getproduct = () => {
             setProduct(response.data)
             setLoading("")
         } catch (error) {
+            setError("Failed to load products");
+    console.log(error);
 
         }
     }
@@ -93,9 +95,9 @@ const Getproduct = () => {
             </div>
             
             <h3 style={{ color: "#6a11cb" }}>Available products</h3>
-                <marquee behavior="scroll" direction="left" scrollamount="5 ">
+                
      <h4 style={{ color: "#6a11cb" }}> Welcome to the available products click purchases now to buy product of your choice</h4>
-</marquee>
+
             {/* bind the states "" */}
             <h2 className='text-warning'>{loading}</h2>
             <h2 className='text-danger'> {error}</h2>
@@ -133,7 +135,7 @@ const Getproduct = () => {
 
                     </button>
                 )}
-                
+                <Chatbot/>
             </div>
             <Footer />
 

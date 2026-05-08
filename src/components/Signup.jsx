@@ -57,9 +57,9 @@ const Signupcomponent=()=>
   style={{ width: "550px", height: "100px", objectFit: "cover" }}
 />
         <h3 style={{ color: "#6a11cb" }}>SIGNUP 🧑‍💻</h3>
-                <marquee behavior="scroll" direction="left" scrollamount="5 ">
+                
      <h4 style={{ color: "#6a11cb" }}> Welcome to our Signup Page 🚀 Create your account now!</h4>
-</marquee>
+
                 {/* bind the states  */}
                 <h2 className="text-warning">{loading}</h2>
                 <h2 className="text-success">{success}</h2>

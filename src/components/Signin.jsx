@@ -44,6 +44,8 @@ const hundlesubmit=async(e)=>{
 
         }
     } catch (error) {
+        setError("try again");
+    console.log(error);
         
     }
 
@@ -60,9 +62,9 @@ const hundlesubmit=async(e)=>{
     />
   </div>
                 <h3 style={{ color: "#6a11cb" }}>SIGNIN 🔑💻</h3>
-                <marquee behavior="scroll" direction="left" scrollamount="5 ">
+                
      <h4 style={{ color: "#6a11cb" }}> Welcome to our Signin Page 🚀 Access your account now!</h4>
-</marquee>
+
                 {/* bind the variables ? */}
                 <h2 className="text-warning">{loading}</h2>
                 <h2 className="text-success">{success}</h2>
