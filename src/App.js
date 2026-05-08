@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,16 +19,14 @@ function App() {
         {/* navbar goes here  */}
         <Navbar />
         <header className="App-header bg-info">
-          <marquee behavior="scroll" direction="left" scrollamount="5">
-
-            <h1 className="hero-title" style={{ color: "rgb(16, 2, 209)" }}>Premium Agricultural Farm Equipments</h1>
-          </marquee>
+          <div className="marquee">
+            <h1 className="hero-title">Premium Agricultural Farm Equipments</h1>
+          </div>
 
           <div className="header-overlay">
-            <marquee behavior="scroll" direction="left" scrollamount="5">
-
-              <p className="tagline animate-text">Durable. Efficient. Built for modern farming.</p>
-            </marquee>
+            <div className="marquee">
+              <p className="tagline">Durable. Efficient. Built for modern farming.</p>
+            </div>
           </div>
         </header>
         <nav>
@@ -45,14 +43,14 @@ function App() {
           <Route path="/Signin" element={<Signincomponet />} />
           <Route path="/Addproduct" element={<Addproduct />} />
           <Route path="/makepayment" element={<Mpesapayment />} />
-          <Route path='/chatbot' element={<Chatbot/>}/>
-          
+          <Route path='/chatbot' element={<Chatbot />} />
+
 
 
         </Routes>
 
       </div>
-      <Chatbot/>
+      <Chatbot />
     </BrowserRouter>
   );
 }

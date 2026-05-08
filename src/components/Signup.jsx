@@ -9,7 +9,7 @@ const Signupcomponent=()=>
     const[username, setUsername]=useState("")
     const[email,setEmail]=useState("")
     const[phone,setPhone]=useState("")
-    const[password,setPassword]=useState("")
+    const[password]=useState("")
     const[loading,setloading]=useState("")
     const[success,setsuccess]=useState("")
     const[error,seterror]=useState("")
@@ -20,7 +20,11 @@ const Signupcomponent=()=>
     const handlesubmit = async (e)=>{
         e.preventDefault()
         setloading("Please wait...")
-        if (password !== confirmPassword) { seterror("Passwords do not match")}
+        if (password !== confirmPassword) {
+    seterror("Passwords do not match");
+    setloading("");
+    return;
+}
         // crete empty digital envelop to store user inputs /
         const formdata= new FormData()
         // append/ add /
@@ -33,6 +37,8 @@ const Signupcomponent=()=>
             setsuccess(response.data.message)
             setloading("")
         } catch (error) {
+            seterror(error.response?.data?.message || "Signup failed");
+    setloading("");
             
         }
     }
@@ -69,7 +75,8 @@ const Signupcomponent=()=>
                 <form action="" onSubmit={handlesubmit}>
                     <input type="text" className="form-control mb-3" placeholder=" 👤Enter Username" onChange={(e)=>setUsername(e.target.value)} /><br />
                     <input type="email" className="form-control mb-3" placeholder=" 📧Enter email" onChange={(e)=>setEmail(e.target.value)} /><br />
-                    <input type="password" className="form-control mb-3" placeholder=" 🔐Enterpassword" onChange={(e)=>{setPassword(e.target.value); checkpasswordstrength(e.target.value);}} /> <br />
+                    
+                    <input type="password" className="form-control mb-3" placeholder=" 🔐Enterpassword" onChange={(e)=>{setConfirmPassword(e.target.value); checkpasswordstrength(e.target.value);}} /> <br />
                     <input type="number" className="form-control mb-3" placeholder=" 📞Enter phone" onChange={(e)=>setPhone(e.target.value)}/><br />
                     {password &&(
                     <p
