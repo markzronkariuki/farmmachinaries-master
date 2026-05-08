@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fredericka+the+Great&family=Gravitas+One&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Rye&family=Tangerine:wght@400;700&display=swap');
+body {
+  margin: 0;
+ font-family: "Gravitas One", serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Gravitas One", serif;
+}
