@@ -7,7 +7,7 @@ const Footer = () => {
                 {/* <!-- child 1  --> */}
                 <div class="col-md-4">
                     <h2 class="text-center text-white">About us</h2>
-                    <p class="text-white">Farm machinery projects and services in Kenya and East Africa are focused on enhancing agricultural productivity through mechanization, transitioning from manual labor to efficient, technology-driven solutions. Key areas include the sale, rental, maintenance, and operation of tractors, implements, and irrigation systems.
+                    <p class="text-primary">Farm machinery projects and services in Kenya and East Africa are focused on enhancing agricultural productivity through mechanization, transitioning from manual labor to efficient, technology-driven solutions. Key areas include the sale, rental, maintenance, and operation of tractors, implements, and irrigation systems.
                         </p>
                 </div>
                 {/* <!-- child 2  --> */}

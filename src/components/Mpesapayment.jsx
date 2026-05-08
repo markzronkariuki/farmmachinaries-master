@@ -28,24 +28,25 @@ const Mpesapayment = () => {
         }
     }   
     return (
-        <div className="row justify-content-center">
-            <h2 className="text-info">Make payment-Lipa na M-pesa</h2>
+        <div className=" d-flex row justify-content-center m-2" style={{minHeight: "100vh",
+      background: "linear-gradient(to right, rgb(201, 179, 214), rgb(139, 28, 167))",backdropFilter: "blur(10px)"}}>
+            <h2 className="warning">Make payment-Lipa na M-pesa</h2>
             
-            <div className="col-md-8 card shadow p-4">
+            <div className="col-md-8 card shadow p-4" style={{ backgroundColor: "rgb(232, 199, 255)", minHeight: "100vh" }}>
                 <img src={imagepath + singleproduct.product_photo} alt="" style={{height:"300px", objectFit:"cover"}}/>
 
             
                 <div className="card-body">
                     <h1 className="text-info ">{singleproduct.product_name}</h1>
                     <p>{singleproduct.product_description}</p>
-                    <b className="text-warning " >{singleproduct.product_cost} </b>
+                    <b className="text-primary " >{singleproduct.product_cost} </b>
             {/* bind the state / */}
 
                  <h2 className="text-warning">{loading}</h2>
                 <h2 className="text-success">{success}</h2>
                 <h2 className="text-danger">{error}</h2>
                     <form action="" onSubmit={hundlesubmit}>
-                        <input type="number" className="form-control" placeholder="enter phone number 254xxxxxxx" onChange={(e)=> setPhone(e.target.value)}></input>
+                        <input type="number" className="form-control" placeholder="enter phone number 254xxxxxxxxx" onChange={(e)=> setPhone(e.target.value)}></input>
                         <button type="submit" className="btn btn-primary w-100">Make payment</button>
                     </form>
                 </div>

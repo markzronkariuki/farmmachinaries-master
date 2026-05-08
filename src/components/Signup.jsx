@@ -50,7 +50,16 @@ const Signupcomponent=()=>
     return(
         <div className="row mt-3 justify-content-center" style={{ backgroundColor: "#b697f1ff", minHeight: "100vh" }}>
             <div className="col-md-6 card shadow p-4 rounded-4">
-                <h1>Signup</h1>
+                <img
+  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+  alt="banner"
+  className="rounded mb-3 d-block mx-auto"
+  style={{ width: "600px", height: "100px", objectFit: "cover" }}
+/>
+        <h3 style={{ color: "#6a11cb" }}>SIGNUP 🧑‍💻</h3>
+                <marquee behavior="scroll" direction="left" scrollamount="5 ">
+     <h4 style={{ color: "#6a11cb" }}> Welcome to our Signup Page 🚀 Create your account now!</h4>
+</marquee>
                 {/* bind the states  */}
                 <h2 className="text-warning">{loading}</h2>
                 <h2 className="text-success">{success}</h2>
@@ -74,7 +83,16 @@ const Signupcomponent=()=>
                     password strength : {strength}
                 </p>
             )}
-                    <button type="submit" className="btn btn-primary w-100"  disabled={loading !== ""}>  🚀 Signup</button><br />
+                    <button type="submit" className="btn btn-primary w-100"  disabled={loading !== ""}>  🚀 Signup</button><br /><b> <br />
+                        <button className="btn btn-outline-dark w-100 py-2">
+          <img
+            src="https://developers.google.com/identity/images/g-logo.png"
+            alt="google"
+            style={{ width: "20px", marginRight: "10px" }}
+          />
+          continue with Google
+        </button>
+                    </b>
                     <p>Already have an account? <Link to="/Signin"> 🔑Signin</Link></p>
                 </form>
             </div>
