@@ -12,9 +12,10 @@ const Chatbot = () => {
     "hi": "Hey there 👋 How can I help you today?",
     "hello": "Hello 😊 Need help with products or your cart?",
     "cart": "Go to the Cart page 🛒 to see your items.",
-    "checkout": "Click 'Proceed to Checkout' in your cart 💳",
+    "checkout": "Click 'Purchase to Checkout' in your cart 💳",
     "products": "You can browse all products in the Products page 🔍",
     "default": "I’m still learning 🤖 Try asking about cart, products, or checkout."
+  
   };
 
   const handleSend = () => {
